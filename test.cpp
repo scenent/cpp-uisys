@@ -27,7 +27,7 @@ void add_obj(UI* obj) {
 int SDL_main(int argc, char* argv[]) {
 	SDL_Init(SDL_INIT_EVERYTHING);
 	TTF_Init();
-	Window = SDL_CreateWindow("Simple UI System", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WindowH, WindowW, SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_RESIZABLE);
+	Window = SDL_CreateWindow("Simple UI System", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, WindowW, WindowH, SDL_WINDOW_ALLOW_HIGHDPI | SDL_WINDOW_RESIZABLE);
 	Renderer = SDL_CreateRenderer(Window, NULL, SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 	UI* Root = new UI("Root", { 0.0f, 0.0f, 600.0f, 600.0f });
 
